@@ -1,0 +1,50 @@
+*{
+  font-family: 'Merienda', cursive;
+  padding:0;
+  margin:5px;
+}
+
+.top-part{
+  text-align: center;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+button{
+  margin-top: 3rem;
+  margin-left: 1rem;
+  font-size: 30px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 5px 6px darkgrey;
+}
+
+#images{
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 2rem;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  #images{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+  }
+  button{
+    margin-top: 1rem;
+    font-size: 18px !important;
+  }
+  .top-part h1{
+    font-size: 26px;
+  }
+}
